@@ -5,16 +5,20 @@ public class Num  {
 	this.val = val;
     }
 
-    public int getVal ()  {
+    public int getValue ()  {
 	return val;
     }
 
-    public void setVal (int val)  {
+    public void setValue (int val)  {
 	this.val = val;
     }
 
     public String toString ()  {
 	return "" + this.val;
+    }
+
+    public boolean Equals (Num num)  {
+	return this.val == num.val;
     }
 
 }
