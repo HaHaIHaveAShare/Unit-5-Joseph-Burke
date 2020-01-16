@@ -1,6 +1,6 @@
-public class Num  {
+public class Num implements Comparable <Num>  {
     private int val;
-
+       
     public Num (int val)  {
 	this.val = val;
     }
@@ -21,4 +21,9 @@ public class Num  {
 	return this.val == num.val;
     }
 
+    @Override
+    public int compareTo (Num o)  {
+	return (this.val - o.val);
+    }
+    
 }
